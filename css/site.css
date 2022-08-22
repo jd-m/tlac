@@ -1,0 +1,582 @@
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    float: left;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    font-family: Arial;
+    line-height: 1.5;
+    font-family: Raleway, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    color: #212427;
+}
+
+a, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: Raleway;
+    color: #4b4b4b;
+    font-weight: bold;
+}
+
+h3 {font-size:20px;}
+h2 {font-size:24px;}
+h1 {font-size:28px;}
+
+h1 { font-size: 32px; font-weight: bold;}
+
+.date {
+    color: darkgray;
+}
+
+
+/* Homepage Header */
+.header {
+    height: 70px;
+    float: none;
+    padding-top: 7px; 
+    /*border-bottom: 1px solid darkgrey;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.header h1 {
+    text-align: center;
+    color: darkcyan;
+    font-size: 18px;
+}
+
+/*Navbar*/
+
+.navbar {
+    
+    display:inline;
+    background-color: white;
+    overflow: hidden;
+    margin-left: 30%;
+    padding: 0px 0px;
+    
+}
+
+/* Style the links inside the navigation bar */
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.navbar a {
+    float: right;
+    color: grey;
+    text-align: center;
+    padding: 16px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arvo;
+    margin: auto;
+}
+
+.navbar a:hover {
+    color: darkcyan;
+}
+
+
+.drop-navbar {
+    width: 100%;
+
+}
+
+.drop-navbar ul {
+    background-color: grey;
+    
+}
+
+.drop-navbar li {
+    font-size: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.drop-navbar a {
+    color: white;
+}
+
+.drop-navbar li:hover {
+    color: white;
+    background-color: darkcyan;       
+}
+
+
+.heading {
+    font-size: 24px;
+    color: grey;
+    border-bottom: 1px solid darkcyan;
+    font-family: Arvo;
+}
+
+.logo {
+    display: block;
+    height: auto;
+    float: left;
+    margin-left: 16px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0px;
+    padding-top: 0px;
+    font-family: courier;
+}
+
+.logo hr {
+    margin-top: 1px;
+    margin-bottom: 2px;
+
+    float: left;
+    clear: both;
+}
+
+.dropdown-icon {
+    float: right;
+    margin-right: 20px;
+    margin-top: 0;
+    padding: 15px 5px;
+    background-color: white;
+    border-radius: 10px;
+    height: 45px;
+    width: 45px;
+    border: 2px solid white;
+}
+
+.dropdown-icon hr {
+    border: 1px solid darkcyan;
+    margin: 4px auto;
+}
+
+.list-heading {
+    font-weight: bold;
+} 
+
+.posts li { 
+    list-style-type:  circle;
+    color: grey;   
+}
+
+.posts li a {
+    color: darkcyan;
+}
+
+.posts li a:hover {
+    color: darkcyan;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Content */
+.indent-1 {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.indent-2 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.indent-3 {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+span {
+    font-size: 16px;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.disappear {
+    display: none;
+}
+
+.appear {
+    display: block;
+}
+
+/*  */
+
+.side {
+    min-height: 1px;
+    float: left;
+    padding: 0px 32px;
+}
+
+.article p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/*Tag links*/
+
+blockquote {
+    margin: 32px 0px;
+    padding: 0px 32px;
+    border-left: 1px solid darkcyan;
+    font-weight: bold;
+}
+
+.hide {
+    display: none;
+}
+
+
+.share-buttons {
+    float:right;
+    display: inline;
+    font-size: 28px;
+}
+
+.share-buttons a {
+    padding-right: 10px;
+}
+
+/* Card */
+
+.post-description {
+    color: grey;
+    font-style: none;
+    font-size: 16px;
+    margin: 16px 0px 0px;
+}
+
+.read-more {
+    /*border: 3px solid darkcyan;
+    color: white;
+    background-color: darkcyan;
+    text-weight: bold;
+    text-align: center;
+    padding: 0px; */
+
+    padding: 4px 0px;
+    margin: 0px;
+    text-align: left;
+    width: auto;
+    background: white;
+    color: black;
+    text-decoration: underline;
+    border: none;
+}
+
+.read-more:hover {
+    color: darkcyan;
+}
+
+.date {
+    margin: 4px 0px 0px;
+}
+
+.post-type {
+    display: none;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: darkcyan;
+    padding: 2px 4px;
+}
+
+
+
+/* Card 2 */
+
+.card-2 {
+    height: auto;
+    width: 100%;
+    float: left;
+    /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19); */
+    margin: 0px 0px 16px;                  
+}
+
+.card-2:hover {
+    /* box-shadow: 0 2px 4px 0 rgba(0, 55, 55, 0.2), 0 4px 15px 0 rgba(0, 55, 55, 0.19); */
+}
+
+.card-2 h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px 0px 0px;
+    margin: 0px;
+    font-family: Arvo;
+}
+
+.card-2 .date {
+    padding: 4px 0px;
+}
+
+.card-2 p {
+    overflow: hidden;
+    padding: 8px 0px;
+}
+
+.card-2 .post-image {
+}
+.card-2 .post-description {
+    padding: 0px 0px;
+    display: none;
+}
+
+.card-2 .read-more {
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-2 hr {
+    width: 100%;
+    margin: 16px 0px 8px;
+}
+
+.card-2 .post-type {
+    background: white;
+    color: darkcyan;
+    border: 1px solid darkcyan;
+}
+
+
+/* Card 3 */
+
+.card-3 {
+    height: auto;
+    text-align: left;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+    padding: 0px 0px 24px;
+}
+
+.card-3:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 55, 55, 0.2), 0 4px 15px 0 rgba(0, 55, 55, 0.19);
+}
+
+
+.card-3 img {
+    width: 100%;
+    height: 310px;
+    padding: 0px 0px 0px 0px;
+}
+
+.card-3 h2 {
+    font-size: 24px;
+    margin: 24px 0px 0px;
+    padding: 0px 32px; 
+    font-family: Raleway;
+}
+
+.card-3 .date {
+    margin: 8px 0px;
+    padding: 0px 32px;
+}
+
+.card-3 .post-description {
+    margin: 8px 0px;
+    padding: 0px 32px;
+}
+
+.card-3 p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card-3 .read-more {
+    
+    margin: 32px 56px;
+}
+
+
+.card-3 .post-type {
+    position: absolute;
+    padding: 2px 8px;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .card {
+	width: 100%;
+    }
+    
+    .side {
+	padding: 0px 40px;
+    }
+
+    .side-border {
+	border-left: 1px solid darkcyan;
+	border-right: 1px solid darkcyan;
+    }
+    
+    .article img {
+	width: 100%;
+	height: 500px;
+    }
+    
+    .disappear {
+	display: block;
+    }
+    
+    .appear {
+	display: none;
+    }
+    
+    .pagebutton {
+	float: left;
+	width: 40%;
+	height: 50px;
+    }
+
+
+    .navbar {
+	text-overflow: "";
+	overflow: hidden;
+    }
+
+
+    /*Card 2*/
+
+    .card-2 {
+	height: auto;
+	padding: 0px 0px 0px;
+	margin-bottom: 48px;
+    }
+    
+    .card-2 .post-image {
+        float: left;
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 8px;
+        display: none;
+        
+    }
+    
+
+    .card-2 h2 {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 4px 0px 0px;
+        margin: 0px;
+        font-family: Arvo;
+    }
+
+    .card-2 .date {
+        padding: 4px 0px;
+    }
+
+    .card-2 p {
+        overflow: hidden;
+        padding: 4px 0px;
+    }
+
+
+    .card-2 .post-description {
+        padding: 0px 0px;
+        display: none;
+    }
+
+    .card-2 .read-more {
+        width: 100%;
+	padding: 0px;
+        margin: 0px;
+	
+    }
+
+    .card-2 hr {
+        width: 100%;
+        margin: 16px 0px;
+	display:none;
+    }
+
+
+    
+    /* Card 3 Desktop*/
+
+    .card-3 {
+	text-align: center;
+        margin: 0px 0px;
+    }
+
+    .card-3 h2 {
+	font-size: 30px;
+        margin: 32px 32px 0px;
+    }
+
+    .card-3:hover {
+        box-shadow: 0 2px 4px 0 rgba(0, 55, 55, 0.2), 0 4px 15px 0 rgba(0, 55, 55, 0.19);
+    }
+
+    .card-3 img {
+        width: 100%;
+        height: 300px;
+        padding: 0px 0px 0px 0px;
+    }
+
+
+    .card-3 .date {
+        margin: 8px 0px;
+        padding: 0px 40px;
+    }
+    
+    .card-3 .post-description {
+        margin: 8px 0px;
+        padding: 0px 40px;
+    }
+
+    .card-3 p {
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 8px 64px;
+    }
+}
+

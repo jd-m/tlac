@@ -1,0 +1,46 @@
+#+title: Posts
+
+* Recent Posts
+  :PROPERTIES:
+  :attr_html: :id recent-posts :class heading hide
+  :html_container: div
+  :html_container_class: posts-2
+  :END:
+
+  #+attr_html: :class indent-3
+
+      
+  #+begin_export javascript
+  $(".posts-2 a").each(function (i, obj) {
+  var a_href = $(this).attr('href');
+
+  $.get(a_href, function (data) {
+  var date = $(data).filter('meta[property="date"]').attr("content");
+  var post_title = $(data).filter('meta[property="og:title"]').attr("content");
+  var description = $(data).filter('meta[property="og:description"]').attr("content");
+  var snippet = $(data).filter('meta[property="snippet"]').attr("content");
+  var tags = $(data).filter('meta[property="tags"]').attr("content");	
+  var image = $(data).filter('meta[property="og:image"]').attr("content");
+  var post_type = $(data).filter('meta[property="post_type"]').attr("content");
+  var text = $(data).find("p:not(blockquote p)").text().substring(0,250);
+  var html_string = "";          
+
+      html_string =
+
+  "<div class=\"card-1\">\n" + 
+  "<img src=\"" + image + "\"/>" +
+  "<a href=\"" + a_href + "\"><div class=\"card-title\">" + post_title + "</div></a>\n" + 
+  "<div class=\"card-description\">" + description + "</div>\n" +
+  "<div class=\"card-date\">" + date + " &nbsp &#9679 &nbsp " + post_type + "</div>\n" + 
+  "<div class=\"card-text\">" + text + "...</div>" + 
+  "<a href=\"" + a_href + "\">" + 
+  "<div class=\"card-read-more\">continue reading...</div></a>" + 
+  "</div>";
+
+      $("#recent-posts").after(html_string);
+  });
+  });
+
+  $(".posts-2 ul").empty();
+
+  #+end_export

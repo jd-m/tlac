@@ -1,0 +1,340 @@
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+    border: 1px solid black;
+    border: none;
+    
+}
+
+h1, h2, h3, h4 {
+    font-family: Arvo;
+    margin: 32px 0px 12px;
+}
+
+body {
+    font-family: Raleway;
+    line-height: 1.5;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+}
+
+.content::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.side {
+    min-height: 10px;
+}
+
+.disappear {
+    display: none;
+}
+
+.appear {
+    display: block;
+}
+
+.hide {
+    display:none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.indent-1 {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.indent-2 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.indent-3 {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+/* Header */
+
+.header {
+    margin: 0px 0px 32px;
+    padding: 16px 32px 0px;
+    min-height: 32px;
+}
+
+.site-top {
+    text-align: center;
+    margin: 0px 0px 0px;
+    width: 85%;
+}
+
+.site-top .site-name {
+    
+    float: left;
+    display: inline-block;
+    font-family: Arvo;
+    font-size: 24px;
+    color: black;
+
+}
+
+.site-top .site-description {
+
+    margin: 0px auto 32px;
+}
+
+/* Dropdown navbar*/
+
+.drop-navbar {
+    width: 100%;
+    clear:both;
+}
+
+.drop-navbar ul {
+    
+}
+
+.drop-navbar li {
+    font-family: Arvo;
+    margin: 4px 48px 4px;
+    padding: 12px 16px;
+    background-color: white;
+    list-style-type: ">";
+}
+
+.drop-navbar a {
+    color: grey;
+}
+
+.drop-navbar li:hover {
+    color: darkcyan;
+    text-decoration: underline;
+    text-decoration-color: darkcyan;
+}
+
+
+.dropdown-icon {
+    float: right;
+    margin: 0px;
+
+    padding: 3px 0px 0px;
+    background-color: white;
+    border-radius: 10px;
+    height: 32px;
+    width: 32px;
+    border: 0px solid white;
+}
+
+.dropdown-icon hr {
+    border: 1px solid black;
+    margin: 4px auto;
+    width: 50%;
+}
+
+
+
+/* Navbar*/
+
+.navbar {
+    text-align: center;
+    margin: 0px 0px 32px;
+}
+
+.navbar a {
+    margin: 0px 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover {
+    color:darkcyan
+}
+
+/* Card-1 */
+
+.card-1 {
+    height: 700px;
+    width: 100%;
+    float: left;
+    padding: 8px 16px;
+    margin: 8px 0px;
+}
+
+.card-1 .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 4px 0px 0px;
+    margin: 0px;
+    font-family: Arvo;
+}
+
+.card-1 .card-date {
+    padding: 4px 0px;
+    color: grey;
+}
+
+.card-1 .card-description {
+    display: none;
+    overflow: hidden;
+    padding: 4px 0px;
+}
+
+.card-1 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin: 0px 0px 32px;
+    padding: 0px 0px;
+
+}
+
+.card-1 .card-text {
+    margin: 4px 0px 16px;
+}
+
+.card-1 .card-read-more {
+    width: auto;
+    margin: 0px;
+    text-decoration: underline;
+}
+
+.card-1 hr {
+    width: 100%;
+    margin: 16px 0px 8px;
+}
+
+/* Article */
+
+.content {
+    margin: 0px 0px 16px 0px;
+}
+
+.heading {
+    font-size: 32px;
+    border-bottom: 1px solid darkcyan;
+}
+.article p {
+    margin: 0 0 1em 0;
+}
+
+.article h1 {
+    font-size: 48px;
+    text-align: center;
+    margin: 64px 0px 32px;
+}
+
+.article .article-date {
+    text-align: center;
+    color: grey;
+    margin: 0px 0px 32px;
+}
+
+.article img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    margin: 0px 0px 32px;
+    padding: 0px 0px;
+}
+
+.article hr {
+    margin: 8px 0px 8px;
+}
+
+blockquote {
+    text-align: center;
+    color: grey;
+    font-family: Josefin Sans;
+    font-size: 20px;
+    margin: 32px 0px;
+    padding: 0px 16px;
+}
+
+a.share-btn {
+
+    margin: 0px 4px 0px 0px;
+    text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .disappear {
+        display: block;
+    }
+
+    .appear {
+        display: none;
+    }
+
+    p {
+	font-size: 20px;
+    }
+
+
+    /* Header */
+
+    .header {
+        margin: 0px 0px 32px;
+    }
+
+    .site-top {
+        text-align: center;
+        margin: 0px 0px 0px;
+	width: auto;
+    }
+
+    .site-top .site-name {
+	float: none;
+        display: block;
+        font-family: Arvo;
+        font-size: 32px;
+        margin: 32px auto 0px;
+    }
+
+    .site-top .site-description {
+        margin: 0px auto 32px;
+    }
+
+    .card-1 {
+	width: 50%;
+    }
+    
+
+}
+
